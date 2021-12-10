@@ -1,0 +1,33 @@
+<div class="container pt-5">
+    <div class="card bg-light">
+        <div class="card-body">
+            <h1 class="text-center mb-5">User Read</h1>
+            <input type="number" class="form-control w-50 mx-auto mb-3" type="text" placeholder="User id" id="UserId">
+            <div class="text-center">
+                <a (click)="getUser()" class="btn btn-secondary mt-3">Rechercher <i class="bi bi-search ml-1"></i></a>
+            </div>
+            <div *ngIf="!user" class="text-center mt-5 alert alert-danger w-50 mx-auto" role="alert">
+                <span id="msgId">Aucun utilisateur sélectionné.</span>
+            </div>
+            <div class="mt-5" *ngIf="user">
+                <h2 class="h5">Résultat : </h2>
+                <table class="table table-bordered border border-dark table-striped mt-3">
+                    <thead class="table-dark">
+                        <tr>
+                            <th scope="col" class="text-center">id</th>
+                            <th scope="col">Firstname</th>
+                            <th scope="col">Lastname</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="text-center">{{user.id}}</th>
+                            <td>{{user.firstname}}</td>
+                            <td>{{user.lastname}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
