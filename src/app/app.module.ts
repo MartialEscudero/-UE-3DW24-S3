@@ -9,6 +9,8 @@ import { UsersListComponent } from './components/users-list/users-list.component
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCreateComponent } from './components/user-create/user-create.component';
+import { UserUpdateComponent } from './components/user-update/user-update.component';
+import { UserDeleteComponent } from './components/user-delete/user-delete.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { UserCreateComponent } from './components/user-create/user-create.compon
     HeaderComponent,
     UsersListComponent,
     UserListComponent,
-    UserCreateComponent
+    UserCreateComponent,
+    UserUpdateComponent,
+    UserDeleteComponent
   ],
   imports: [
     BrowserModule,
