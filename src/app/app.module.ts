@@ -11,6 +11,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCreateComponent } from './components/user-create/user-create.component';
 import { UserUpdateComponent } from './components/user-update/user-update.component';
 import { UserDeleteComponent } from './components/user-delete/user-delete.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { UserDeleteComponent } from './components/user-delete/user-delete.compon
     UserListComponent,
     UserCreateComponent,
     UserUpdateComponent,
-    UserDeleteComponent
+    UserDeleteComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -6,6 +6,7 @@ import { UserListComponent } from './components/user-list/user-list.component';
 import { UserCreateComponent } from './components/user-create/user-create.component';
 import { UserUpdateComponent } from './components/user-update/user-update.component';
 import { UserDeleteComponent } from './components/user-delete/user-delete.component';
+import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
     { path: 'header', component: HeaderComponent },
@@ -14,6 +15,7 @@ const routes: Routes = [
     { path: 'create', component: UserCreateComponent },
     { path: 'update', component: UserUpdateComponent },
     { path: 'delete', component: UserDeleteComponent },
+    { path: '', component: HomeComponent },
 ];
 
 @NgModule({
