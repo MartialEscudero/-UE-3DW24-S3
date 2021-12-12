@@ -11,8 +11,6 @@ export class UserListComponent implements OnInit {
 
     user?: Users;
 
-    private userId: number = 0;
-
     constructor(private userService : UserService) { }
 
     ngOnInit(): void { }
@@ -25,7 +23,6 @@ export class UserListComponent implements OnInit {
         // On récupère la valeur du input
         var userId = parseInt(input.value);
 
-        // 
         input.value = "";
 
         // On test si c'est bien un nombre

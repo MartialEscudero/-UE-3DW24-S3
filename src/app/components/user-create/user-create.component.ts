@@ -27,6 +27,9 @@ export class UserCreateComponent implements OnInit {
             lastname : inputLastname.value
         }
 
+        inputFirstname.value = ""
+        inputLastname.value = ""
+
         this.createService.postUser(objUser)
         .subscribe(
             data => {

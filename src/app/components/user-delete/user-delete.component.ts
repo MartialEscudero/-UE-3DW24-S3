@@ -32,6 +32,8 @@ export class UserDeleteComponent implements OnInit {
             }
         }
 
+        inputId.value = ""
+
         this.deleteService.deleteUser(objUser)
         .subscribe(
             data => {

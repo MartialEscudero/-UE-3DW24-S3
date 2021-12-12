@@ -29,6 +29,10 @@ export class UserUpdateComponent implements OnInit {
             lastname : inputLastname.value
         }
 
+        inputId.value = ""
+        inputFirstname.value = ""
+        inputLastname.value = ""
+
         this.updateService.updateUser(objUser)
         .subscribe(
             data => {
